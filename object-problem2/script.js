@@ -4,7 +4,7 @@
 
 
 
-
+// make object
 const people = [
     {
       firstName: 'Darren',
@@ -22,3 +22,12 @@ const people = [
       age      : 15
     }
   ]
+
+//   loop through every object in the array
+  function getName (array) {
+    for (let i = 0; i < array.length; i++) {
+        // show only the first and last name in every object
+      console.log(array[i].firstName + ' '  + array[i].lastName)
+    }
+  }
+getName(people)
