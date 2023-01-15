@@ -27,6 +27,7 @@ const people = [
   function getName (array) {
     for (let i = 0; i < array.length; i++) {
         // show only the first and last name in every object
+        // i in array is each object
       console.log(array[i].firstName + ' '  + array[i].lastName)
     }
   }
