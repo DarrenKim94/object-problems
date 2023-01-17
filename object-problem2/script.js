@@ -24,11 +24,10 @@ const people = [
   ]
 
 //   loop through every object in the array
-  function getName (array) {
-    for (let i = 0; i < array.length; i++) {
-        // show only the first and last name in every object
-        // i in array is each object
-      console.log(array[i].firstName + ' '  + array[i].lastName)
-    }
+  function getNames (array) {
+    array.forEach(function(name) {
+    // show only the first and last name in every object
+      console.log(`${name.firstName} ${name.lastName}`)
+    })
   }
-getName(people)
+getNames(people)
