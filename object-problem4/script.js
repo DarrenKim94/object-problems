@@ -1,17 +1,20 @@
-// Create an object, then write a JavaScript function 
-// that checks whether an object contains the specified key.
-
-const fruitColors = {
-    banana : 'Yellow',
-    kiwi : 'Green',
-    strawberry : 'Red',
-    orange : 'Orange',
-}
-
-// write a function that takes in the object and key we are looking for
-function findKey(obj, key) {
-    // this method is a boolean and will return true or false
-    return obj.hasOwnProperty(key)
-}
-
-console.log(findKey(fruitColors, 'Kiwi'))
+const books = [ 
+    { author: 'Bill Gates', title: 'The Road Ahead', libraryID: 1254},
+    { author: 'Steve Jobs', title: 'Walter Isaacson', libraryID: 4264},
+    { author: 'Suzanne Collins', title: 'Mockingjay: The Final Book of The Hunger Games', libraryID: 3245}
+];
+ 
+ function sortObjects(a, b) {
+     if (a.title < b.title) {
+       return -1;
+     }
+     if (a.title > b.title) {
+       return 1;
+     }
+     else{
+       return 0;
+     }
+ }
+  
+ 
+ console.log(books.sort(sortObjects))
