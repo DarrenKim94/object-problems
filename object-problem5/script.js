@@ -1,14 +1,14 @@
 const books = [ 
-
     { author: 'Bill Gates', title: 'The Road Ahead', libraryID: 1254},
- 
     { author: 'Steve Jobs', title: 'Walter Isaacson', libraryID: 4264},
- 
     { author: 'Suzanne Collins', title: 'Mockingjay: The Final Book of The Hunger Games', libraryID: 3245}
- 
-    ];
+];
  
  function sortObjects(a, b) {
+    // compare two titles
+    // if a is less than, give it a value of -1 and it will be placed before b
+    // this will be compared and sorted in alphabetical order, so it will be placed from
+    // least to greatest
      if (a.title < b.title) {
        return -1;
      }
