@@ -2,10 +2,10 @@
 // that checks whether an object contains the specified key.
 
 const fruitColors = {
-    Banana       : 'Yellow',
-    Kiwi         : 'Green',
-    Strawberry   : 'Red',
-    Orange       : 'Orange',
+    banana : 'Yellow',
+    kiwi : 'Green',
+    strawberry : 'Red',
+    orange : 'Orange',
 }
 
 // write a function that takes in the object and key we are looking for
